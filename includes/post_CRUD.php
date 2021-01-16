@@ -100,5 +100,9 @@ if (isset($_POST['update_post'])) {
     }
 }
 
-
-
+// if delete buton is clicked
+if (isset($_GET['post_id'])) {
+    $post_id = $_GET['post_id'];
+    $delete_query = "DELETE FROM posts WHERE id=$post_id";
+    mysqli_query($conn, $delete_query);
+}

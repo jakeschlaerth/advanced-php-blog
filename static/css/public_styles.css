@@ -64,6 +64,16 @@ form textarea {
     width: 100%;
 }
 
+.delete-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.delete-form .delete-btn {
+    margin: 20px auto;
+}
+
+
 
 /* default button styling */
 .btn {

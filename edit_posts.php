@@ -36,9 +36,14 @@ $posts = getPostsByUser($_SESSION['user']['id']);
                 </select>
                 <input type="text" name="title" value="<?php echo $post['title']; ?>">
                 <textarea name="body" class="body-text-area"><?php echo $post['body']; ?></textarea>
-                <button class="btn small-btn" type="submit" name="update_post">Update post</button>
+                <button class="btn small-btn update-btn" type="submit" name="update_post">Update post</button>
             </form>
 
+            <form class="delete-form" action="edit_posts.php" method="get">
+                <input type="number" name="post_id" style="display:none" value=<?php echo $post['id']; ?>>
+                <span>This button will permanently delete your post!</span>
+                <button class="btn small-btn delete-btn" type="submit" name="delete_post">DELETE</button>
+            </form>
         <?php } else { ?>
             <h2 class="content-title">Click on a post to edit</h2>
             <hr>
