@@ -355,13 +355,6 @@ form textarea {
 }
 
 /* * * * * * * * *
-* welcome message
-* * * * * * * * */
-.welcome-message-container {
-    margin: 20px;
-}
-
-/* * * * * * * * *
 * create post
 * * * * * * * * */
 .dropdown {
