@@ -160,7 +160,7 @@ form textarea {
     padding: 20px 0px;
 }
 
-/* BANNER: Welcome message; */
+/* banner styling */
 .banner {
     margin: 5px auto;
     min-height: 400px;
@@ -183,7 +183,7 @@ form textarea {
   width: 100px;
 }
 
-/* BANNER: Login Form; */
+/* banner: Login Form; */
 .banner .login-container {
     width: 50%;
 }
@@ -227,8 +227,6 @@ form textarea {
 }
 
 .posts-container .post {
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
     border-radius: 2px;
     border: 1px solid #b3b3b3;
@@ -279,7 +277,7 @@ form textarea {
 }
 
 /* * * * * * * * *
-* SINGLE PAGE 
+* single page view
 * * * * * * * * */
 .content .post-wrapper {
     width: 70%;
@@ -290,6 +288,7 @@ form textarea {
 .full-post-div {
     min-height: 300px;
     padding: 20px;
+    margin-top: 20px;
     border: 1px solid #e4e1e1;
     border-radius: 2px;
     color: white;
@@ -317,7 +316,7 @@ form textarea {
 
 .post-sidebar .card {
     width: 95%;
-    margin: 10px auto;
+    margin: 20px auto;
     border: 1px solid #e4e1e1;
 }
 
@@ -325,7 +324,7 @@ form textarea {
     padding: 10px;
     text-align: center;
     border-radius: 3px;
-    background: #3E606F;
+    background: #2a4158;
 }
 
 .post-sidebar .card .card-header h2 {
@@ -345,7 +344,7 @@ form textarea {
 }
 
 /* * * * * * * * *
-* Register Page 
+* register Page 
 * * * * * * * * */
 .sign-in {
     width: 10%;

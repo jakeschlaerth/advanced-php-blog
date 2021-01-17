@@ -53,8 +53,6 @@ if (isset($_POST['reg'])) {
         $new_user_id = mysqli_insert_id($conn);
         // add logged in user to session variable
         $_SESSION['user'] = getUserById($new_user_id);
-        // let the user know of success
-        $_SESSION['message'] = "You are now logged in";
         // redirect to home
         header('location: index.php');
     }
@@ -86,8 +84,6 @@ if (isset($_POST['home_login'])) {
             $user = mysqli_fetch_assoc($result);
             // place user in session array
             $_SESSION['user'] = $user;
-            // give login message to session message var
-            $_SESSION['message'] = "You are now logged in";
             // redirect to home page
             header('Location: index.php');
             exit(0);

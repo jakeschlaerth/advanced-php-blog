@@ -8,9 +8,11 @@ if (isset($_GET['topic'])) {
     // grab topic id param from url query
     $topic_id = $_GET['topic'];
     $posts = getPublishedPostsByTopic($topic_id);
+
+    $errors = array();
 }
 ?>
-<title>Jake's Blog | Finltered Posts </title>
+<title>Jake's Blog | Filtered Posts </title>
 </head>
 
 <body>
@@ -41,5 +43,5 @@ if (isset($_GET['topic'])) {
                     </a>
                 </div>
             <?php endforeach ?>
-        </div> <!-- content -->
+        </div> <!-- content -->       
         <?php include(ROOT_PATH . '/includes/footer.php'); ?>
